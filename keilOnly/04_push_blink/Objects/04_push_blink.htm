@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\04_push_blink.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\04_push_blink.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Nov 11 09:02:55 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Nov 12 07:05:35 2020
 <BR><P>
 <H3>Maximum Stack Usage =         28 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -214,8 +214,8 @@ Global Symbols
 <P><STRONG><a name="[83]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[55]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; toggleDouble
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; exit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -545,8 +545,8 @@ Global Symbols
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toggle
 </UL>
 
-<P><STRONG><a name="[56]"></a>main</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = main &rArr; toggleDouble
+<P><STRONG><a name="[56]"></a>main</STRONG> (Thumb, 80 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = main &rArr; toggleDouble
 </UL>
 <BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toggleDouble
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toggle

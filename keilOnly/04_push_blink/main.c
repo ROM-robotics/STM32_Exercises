@@ -13,7 +13,7 @@ int main(void)
 	int mode;
 	while(1)
 	{
-		volatile int idr = GPIOC->IDR & 0x0000000C; 	// Mask PC0,PC1,PC4..PC15, filter PC2, PC3
+		int idr = GPIOC->IDR & 0x0000000C; 	// Mask PC0,PC1,PC4..PC15, filter PC2, PC3
 		
 		if( idr == 0b1000)									// if PC2 click (0x00000008)
 		{
