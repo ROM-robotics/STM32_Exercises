@@ -12,7 +12,7 @@ int main(void)
 		
 		while(1)
 		{
-			delayMilliSec(200);
+			//delayMilliSec(200);
 		}
 }
 
