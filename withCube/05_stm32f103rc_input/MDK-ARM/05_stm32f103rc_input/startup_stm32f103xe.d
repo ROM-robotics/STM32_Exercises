@@ -1,0 +1,1 @@
+05_stm32f103rc_input\startup_stm32f103xe.o: startup_stm32f103xe.s

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"05_stm32f103rc_input\startup_stm32f103xe.o"
+"05_stm32f103rc_input\main.o"
+"05_stm32f103rc_input\stm32f1xx_it.o"
+"05_stm32f103rc_input\stm32f1xx_hal_msp.o"
+"05_stm32f103rc_input\stm32f1xx_hal_gpio_ex.o"
+"05_stm32f103rc_input\stm32f1xx_hal_tim.o"
+"05_stm32f103rc_input\stm32f1xx_hal_tim_ex.o"
+"05_stm32f103rc_input\stm32f1xx_hal.o"
+"05_stm32f103rc_input\stm32f1xx_hal_rcc.o"
+"05_stm32f103rc_input\stm32f1xx_hal_rcc_ex.o"
+"05_stm32f103rc_input\stm32f1xx_hal_gpio.o"
+"05_stm32f103rc_input\stm32f1xx_hal_dma.o"
+"05_stm32f103rc_input\stm32f1xx_hal_cortex.o"
+"05_stm32f103rc_input\stm32f1xx_hal_pwr.o"
+"05_stm32f103rc_input\stm32f1xx_hal_flash.o"
+"05_stm32f103rc_input\stm32f1xx_hal_flash_ex.o"
+"05_stm32f103rc_input\stm32f1xx_hal_exti.o"
+"05_stm32f103rc_input\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "05_stm32f103rc_input\05_stm32f103rc_input.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "05_stm32f103rc_input.map" -o 05_stm32f103rc_input\05_stm32f103rc_input.axf

@@ -546,7 +546,7 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=01_cube_blink\startup_stm32f103xe.d -o01_cube_blink\startup_stm32f
-103xe.o -I.\RTE\_01_cube_blink -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core
+103xe.o -I.\RTE\_01_cube_blink -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core
 \Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include --predef
 ine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERS
 ION SETA 526" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_HD SETA 1" --li
