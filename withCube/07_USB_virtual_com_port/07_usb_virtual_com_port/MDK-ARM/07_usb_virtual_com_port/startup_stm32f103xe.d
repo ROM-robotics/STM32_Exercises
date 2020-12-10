@@ -1,0 +1,1 @@
+07_usb_virtual_com_port\startup_stm32f103xe.o: startup_stm32f103xe.s
