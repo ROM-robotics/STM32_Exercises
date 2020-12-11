@@ -1,7 +1,7 @@
 #include "stm32f10x.h"
 
 volatile uint16_t Period = 0, Width = 0;
-int rpm = 0, frequency = 0, cpr = 330;
+int rpm = 0, frequency = 0, tim4CNT = 0, cpr = 330;
 
 int calculateRPM(uint16_t p);
 int main(void)
@@ -20,6 +20,7 @@ int main(void)
 	
 	while(1)
 	{
+		tim4CNT = TIM4->CNT;
 		Period = TIM4->CCR1;
 		Width  = TIM4->CCR2;
 		rpm = calculateRPM(Period);

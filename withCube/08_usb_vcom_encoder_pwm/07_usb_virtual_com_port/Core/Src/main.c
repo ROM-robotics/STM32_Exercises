@@ -141,7 +141,7 @@ int main(void)
 		//sprintf(string,"%.2f",(ADCValue*ADC_CALC) );
 		sprintf(string,"%.2d", TIM4->CNT);
 		CDC_Transmit_FS( (uint8_t *)string, sizeof(string) );
-		HAL_Delay(1000);
+		//HAL_Delay(1000);
 		TIM1->CCR1 = UserRxBufferFS[1]<<8 | UserRxBufferFS[0];
 		
   }
